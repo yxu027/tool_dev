@@ -101,7 +101,7 @@ check_exon_frame_biomart <- function(transcript_id,
 
 
 ## Example:
-out <- check_exon_frame_biomart("ENST00000266088")
+out <- check_exon_frame_biomart("ENST00000265081")
 View(out$full_table)
 View(out$prf_affecting_exons)
 
@@ -112,6 +112,7 @@ cat(length(out$prf_affecting_exons$rank), " of ", length(out$full_table$rank),
 
 # SGLT2, ENST00000330498
 # SGLT1, ENST00000266088
+# MSH3, ENST00000265081
 
 
 ensembl <- useEnsembl(
